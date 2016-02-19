@@ -46,6 +46,7 @@ void q3Island::Solve( )
 
 		if ( body->m_flags & q3Body::eDynamic )
 		{
+      body->m_linearVelocity *= 1.f - body->m_linearDamping;
 			body->ApplyLinearForce( m_gravity * body->m_gravityScale );
 
 			// Calculate world space intertia tensor

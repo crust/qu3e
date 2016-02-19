@@ -76,16 +76,16 @@ public:
 	const q3Vec3 GetLocalVector( const q3Vec3& v ) const;
 	const q3Vec3 GetWorldPoint( const q3Vec3& p ) const;
 	const q3Vec3 GetWorldVector( const q3Vec3& v ) const;
-	const q3Vec3 GetLinearVelocity( ) const;
+	const q3Vec3& GetLinearVelocity( ) const;
 	void SetLinearVelocity( const q3Vec3& v );
-	const q3Vec3 GetAngularVelocity( ) const;
+	const q3Vec3& GetAngularVelocity( ) const;
 	void SetAngularVelocity( const q3Vec3 v );
 	bool CanCollide( const q3Body *other ) const;
-	const q3Transform GetTransform( ) const;
+	const q3Transform& GetTransform( ) const;
 	i32 GetFlags( ) const;
 	void SetLayers( i32 layers );
 	i32 GetLayers( ) const;
-	const q3Quaternion GetQuaternion( ) const;
+	const q3Quaternion& GetQuaternion( ) const;
 
 	// Manipulating the transformation of a body manually will result in
 	// non-physical behavior. Contacts are updated upon the next call to
@@ -131,6 +131,7 @@ private:
 	q3Vec3 m_worldCenter;
 	r32 m_sleepTime;
 	r32 m_gravityScale;
+  r32 m_linearDamping;
 	i32 m_layers;
 	i32 m_flags;
 
@@ -182,6 +183,7 @@ struct q3BodyDef
 		lockAxisX = false;
 		lockAxisY = false;
 		lockAxisZ = false;
+    linearDamping = 0.f;
 	}
 
 	q3Vec3 axis;			// Initial world transformation.
@@ -190,6 +192,7 @@ struct q3BodyDef
 	q3Vec3 linearVelocity;	// Initial linear velocity in world space.
 	q3Vec3 angularVelocity;	// Initial angular velocity in world space.
 	r32 gravityScale;		// Convenient scale values for gravity x, y and z directions.
+  r32 linearDamping;  // Value from 0.0 - 1.0 that dampens linear velocity. Higher = more damping.
 	i32 layers;				// Bitmask of collision layers. Bodies matching at least one layer can collide.
 	void* userData;			// Use to store application specific data.
 

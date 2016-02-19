@@ -37,6 +37,7 @@ q3Body::q3Body( const q3BodyDef& def, q3Scene* scene )
 {
 	m_linearVelocity = def.linearVelocity;
 	m_angularVelocity = def.angularVelocity;
+  m_linearDamping = def.linearDamping;
 	q3Identity( m_force );
 	q3Identity( m_torque );
 	m_q.Set( q3Normalize( def.axis ), def.angle );
@@ -272,7 +273,7 @@ const q3Vec3 q3Body::GetWorldVector( const q3Vec3& v ) const
 }
 
 //--------------------------------------------------------------------------------------------------
-const q3Vec3 q3Body::GetLinearVelocity( ) const
+const q3Vec3& q3Body::GetLinearVelocity( ) const
 {
 	return m_linearVelocity;
 }
@@ -294,7 +295,7 @@ void q3Body::SetLinearVelocity( const q3Vec3& v )
 }
 
 //--------------------------------------------------------------------------------------------------
-const q3Vec3 q3Body::GetAngularVelocity( ) const
+const q3Vec3& q3Body::GetAngularVelocity( ) const
 {
 	return m_angularVelocity;
 }
@@ -331,7 +332,7 @@ bool q3Body::CanCollide( const q3Body *other ) const
 }
 
 //--------------------------------------------------------------------------------------------------
-const q3Transform q3Body::GetTransform( ) const
+const q3Transform& q3Body::GetTransform( ) const
 {
 	return m_tx;
 }
@@ -373,7 +374,7 @@ i32 q3Body::GetLayers( ) const
 }
 
 //--------------------------------------------------------------------------------------------------
-const q3Quaternion q3Body::GetQuaternion( ) const
+const q3Quaternion& q3Body::GetQuaternion( ) const
 {
 	return m_q;
 }
