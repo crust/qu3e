@@ -129,9 +129,9 @@ private:
 	q3Quaternion m_q;
 	q3Vec3 m_localCenter;
 	q3Vec3 m_worldCenter;
+  q3Vec3 m_linearDamping;
 	r32 m_sleepTime;
 	r32 m_gravityScale;
-  r32 m_linearDamping;
 	i32 m_layers;
 	i32 m_flags;
 
@@ -183,7 +183,6 @@ struct q3BodyDef
 		lockAxisX = false;
 		lockAxisY = false;
 		lockAxisZ = false;
-    linearDamping = 0.f;
 	}
 
 	q3Vec3 axis;			// Initial world transformation.
@@ -192,7 +191,7 @@ struct q3BodyDef
 	q3Vec3 linearVelocity;	// Initial linear velocity in world space.
 	q3Vec3 angularVelocity;	// Initial angular velocity in world space.
 	r32 gravityScale;		// Convenient scale values for gravity x, y and z directions.
-  r32 linearDamping;  // Value from 0.0 - 1.0 that dampens linear velocity. Higher = more damping.
+  q3Vec3 linearDamping;  // Value from 0.0 - 1.0 per axis that dampens linear velocity. Higher = more damping.
 	i32 layers;				// Bitmask of collision layers. Bodies matching at least one layer can collide.
 	void* userData;			// Use to store application specific data.
 

@@ -57,6 +57,7 @@ struct q3Vec3
 	void SetAll( r32 a );
 	q3Vec3& operator+=( const q3Vec3& rhs );
 	q3Vec3& operator-=( const q3Vec3& rhs );
+  q3Vec3& operator*=( const q3Vec3& rhs );
 	q3Vec3& operator*=( r32 f );
 	q3Vec3& operator/=( r32 f );
 
