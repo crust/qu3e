@@ -63,6 +63,10 @@ public:
 
 	// Removes all boxes from this body and the broadphase.
 	void RemoveAllBoxes( );
+  
+  // Returns the first attached Box as a linked list.
+  q3Box* GetBoxList( );
+  q3Box const* GetBoxList( ) const;
 
 	void ApplyLinearForce( const q3Vec3& force );
 	void ApplyForceAtWorldPoint( const q3Vec3& force, const q3Vec3& point );
