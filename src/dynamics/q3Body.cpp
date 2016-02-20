@@ -37,7 +37,7 @@ q3Body::q3Body( const q3BodyDef& def, q3Scene* scene )
 {
 	m_linearVelocity = def.linearVelocity;
 	m_angularVelocity = def.angularVelocity;
-  m_linearDamping = def.linearDamping;
+  m_linearDamping = q3Vec3(1.f, 1.f, 1.f) - def.linearDamping;
 	q3Identity( m_force );
 	q3Identity( m_torque );
 	m_q.Set( q3Normalize( def.axis ), def.angle );
@@ -236,6 +236,7 @@ bool q3Body::IsAwake( ) const
 	return m_flags & eAwake ? true : false;
 }
 
+
 //--------------------------------------------------------------------------------------------------
 r32 q3Body::GetGravityScale( ) const
 {
@@ -378,6 +379,16 @@ const q3Quaternion& q3Body::GetQuaternion( ) const
 {
 	return m_q;
 }
+
+//--------------------------------------------------------------------------------------------------
+void q3Body::SetUserdata( void* data ) {
+  m_userData = data;
+}
+
+void* q3Body::GetUserdata( ) const {
+  return m_userData;
+}
+
 
 //--------------------------------------------------------------------------------------------------
 void q3Body::Render( q3Render* render ) const

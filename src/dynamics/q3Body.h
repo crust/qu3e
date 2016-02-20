@@ -86,6 +86,9 @@ public:
 	void SetLayers( i32 layers );
 	i32 GetLayers( ) const;
 	const q3Quaternion& GetQuaternion( ) const;
+  
+  void SetUserdata( void* );
+  void* GetUserdata( ) const;
 
 	// Manipulating the transformation of a body manually will result in
 	// non-physical behavior. Contacts are updated upon the next call to
@@ -162,6 +165,7 @@ private:
 struct q3BodyDef
 {
 	q3BodyDef( )
+    : linearDamping(0.f, 0.f, 0.f)
 	{
 		// Set all initial positions/velocties to zero
 		q3Identity( axis );
