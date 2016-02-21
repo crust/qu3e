@@ -35,12 +35,12 @@
 // q3ContactManager
 //--------------------------------------------------------------------------------------------------
 q3ContactManager::q3ContactManager( q3Stack* stack )
-	: m_stack( stack )
-	, m_broadphase( this )
+	: m_contactCount( 0 )
+  , m_stack( stack )
 	, m_allocator( sizeof( q3ContactConstraint ), 256 )
+  , m_broadphase( this )
 {
 	m_contactList = NULL;
-	m_contactCount = 0;
 	m_contactListener = NULL;
 }
 

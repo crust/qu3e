@@ -46,6 +46,7 @@ q3Body::q3Body( const q3BodyDef& def, q3Scene* scene )
 	m_sleepTime = r32( 0.0 );
 	m_gravityScale = def.gravityScale;
 	m_layers = def.layers;
+  m_collisionGroupMask = def.collisionGroupMask;
 	m_userData = def.userData;
 	m_scene = scene;
 	m_flags = 0;
@@ -338,6 +339,9 @@ bool q3Body::CanCollide( const q3Body *other ) const
 
 	if ( !(m_layers & other->m_layers) )
 		return false;
+  
+  if ( (m_collisionGroupMask & other->m_collisionGroupMask) )
+    return false;
 
 	return true;
 }

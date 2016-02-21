@@ -141,6 +141,7 @@ private:
 	r32 m_gravityScale;
 	i32 m_layers;
 	i32 m_flags;
+  u32 m_collisionGroupMask;
 
 	q3Box* m_boxes;
 	void *m_userData;
@@ -170,6 +171,7 @@ struct q3BodyDef
 {
 	q3BodyDef( )
     : linearDamping(0.f, 0.f, 0.f)
+    , collisionGroupMask(0)
 	{
 		// Set all initial positions/velocties to zero
 		q3Identity( axis );
@@ -200,7 +202,8 @@ struct q3BodyDef
 	q3Vec3 angularVelocity;	// Initial angular velocity in world space.
 	r32 gravityScale;		// Convenient scale values for gravity x, y and z directions.
   q3Vec3 linearDamping;  // Value from 0.0 - 1.0 per axis that dampens linear velocity. Higher = more damping.
-	i32 layers;				// Bitmask of collision layers. Bodies matching at least one layer can collide.
+	i32 layers;              // Bitmask of collision layers. Bodies matching at least one layer can collide.
+  u32 collisionGroupMask;  // Bitmask of collision groups. Bodies sharing at least one group never collide.
 	void* userData;			// Use to store application specific data.
 
 	// Static, dynamic or kinematic. Dynamic bodies with zero mass are defaulted
