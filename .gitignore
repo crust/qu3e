@@ -1,3 +1,6 @@
+*.xcworkspace
+xcuserdata
+DerivedData
 .DS_Store
 Makefile
 lib

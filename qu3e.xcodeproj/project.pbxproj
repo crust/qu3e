@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B8861C91C7A69BD00146EF6 /* q3BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861731C7A698600146EF6 /* q3BroadPhase.cpp */; };
+		0B8861CA1C7A69C700146EF6 /* q3BroadPhase.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861741C7A698600146EF6 /* q3BroadPhase.h */; };
+		0B8861CB1C7A69C700146EF6 /* q3DynamicAABBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861751C7A698600146EF6 /* q3DynamicAABBTree.cpp */; };
+		0B8861CC1C7A69C700146EF6 /* q3DynamicAABBTree.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861761C7A698600146EF6 /* q3DynamicAABBTree.h */; };
+		0B8861CD1C7A69C700146EF6 /* q3DynamicAABBTree.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861771C7A698600146EF6 /* q3DynamicAABBTree.inl */; };
+		0B8861CE1C7A69C700146EF6 /* q3Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619D1C7A698600146EF6 /* q3Box.cpp */; };
+		0B8861CF1C7A69C700146EF6 /* q3Box.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619E1C7A698600146EF6 /* q3Box.h */; };
+		0B8861D01C7A69C700146EF6 /* q3Box.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619F1C7A698600146EF6 /* q3Box.inl */; };
+		0B8861D11C7A69C700146EF6 /* q3Collide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A01C7A698600146EF6 /* q3Collide.cpp */; };
+		0B8861D21C7A69C700146EF6 /* q3Collide.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A11C7A698600146EF6 /* q3Collide.h */; };
+		0B8861D31C7A69C700146EF6 /* q3Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A31C7A698600146EF6 /* q3Geometry.cpp */; };
+		0B8861D41C7A69C700146EF6 /* q3Geometry.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A41C7A698600146EF6 /* q3Geometry.h */; };
+		0B8861D51C7A69C700146EF6 /* q3Geometry.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A51C7A698600146EF6 /* q3Geometry.inl */; };
+		0B8861D61C7A69C700146EF6 /* q3Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A61C7A698600146EF6 /* q3Memory.cpp */; };
+		0B8861D71C7A69C700146EF6 /* q3Memory.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A71C7A698600146EF6 /* q3Memory.h */; };
+		0B8861D81C7A69C700146EF6 /* q3Settings.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A81C7A698600146EF6 /* q3Settings.h */; };
+		0B8861D91C7A69C700146EF6 /* q3Types.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A91C7A698600146EF6 /* q3Types.h */; };
+		0B8861DA1C7A69C700146EF6 /* q3Render.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AB1C7A698600146EF6 /* q3Render.h */; };
+		0B8861DB1C7A69C700146EF6 /* q3Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AD1C7A698600146EF6 /* q3Body.cpp */; };
+		0B8861DC1C7A69C700146EF6 /* q3Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AE1C7A698600146EF6 /* q3Body.h */; };
+		0B8861DD1C7A69C700146EF6 /* q3Contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AF1C7A698600146EF6 /* q3Contact.cpp */; };
+		0B8861DE1C7A69C700146EF6 /* q3Contact.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B01C7A698600146EF6 /* q3Contact.h */; };
+		0B8861DF1C7A69C700146EF6 /* q3ContactManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B11C7A698600146EF6 /* q3ContactManager.cpp */; };
+		0B8861E01C7A69C700146EF6 /* q3ContactManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B21C7A698600146EF6 /* q3ContactManager.h */; };
+		0B8861E11C7A69C700146EF6 /* q3ContactSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B31C7A698600146EF6 /* q3ContactSolver.cpp */; };
+		0B8861E21C7A69C700146EF6 /* q3ContactSolver.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B41C7A698600146EF6 /* q3ContactSolver.h */; };
+		0B8861E31C7A69C700146EF6 /* q3Island.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B51C7A698600146EF6 /* q3Island.cpp */; };
+		0B8861E41C7A69C700146EF6 /* q3Island.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B61C7A698600146EF6 /* q3Island.h */; };
+		0B8861E51C7A69C700146EF6 /* q3Mat3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B91C7A698600146EF6 /* q3Mat3.cpp */; };
+		0B8861E61C7A69C700146EF6 /* q3Mat3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BA1C7A698600146EF6 /* q3Mat3.h */; };
+		0B8861E71C7A69C700146EF6 /* q3Mat3.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BB1C7A698600146EF6 /* q3Mat3.inl */; };
+		0B8861E81C7A69C700146EF6 /* q3Math.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BC1C7A698600146EF6 /* q3Math.h */; };
+		0B8861E91C7A69C700146EF6 /* q3Math.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BD1C7A698600146EF6 /* q3Math.inl */; };
+		0B8861EA1C7A69C700146EF6 /* q3Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BE1C7A698600146EF6 /* q3Quaternion.cpp */; };
+		0B8861EB1C7A69C700146EF6 /* q3Quaternion.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BF1C7A698600146EF6 /* q3Quaternion.h */; };
+		0B8861EC1C7A69C700146EF6 /* q3Transform.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C01C7A698600146EF6 /* q3Transform.h */; };
+		0B8861ED1C7A69C700146EF6 /* q3Transform.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C11C7A698600146EF6 /* q3Transform.inl */; };
+		0B8861EE1C7A69C700146EF6 /* q3Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C21C7A698600146EF6 /* q3Vec3.cpp */; };
+		0B8861EF1C7A69C700146EF6 /* q3Vec3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C31C7A698600146EF6 /* q3Vec3.h */; };
+		0B8861F01C7A69C700146EF6 /* q3Vec3.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C41C7A698600146EF6 /* q3Vec3.inl */; };
+		0B8861F11C7A69C700146EF6 /* q3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C51C7A698600146EF6 /* q3.h */; };
+		0B8861F21C7A69C700146EF6 /* q3Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C71C7A698600146EF6 /* q3Scene.cpp */; };
+		0B8861F31C7A69C700146EF6 /* q3Scene.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C81C7A698600146EF6 /* q3Scene.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B88616A1C7A690400146EF6 /* libqu3e.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libqu3e.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8861731C7A698600146EF6 /* q3BroadPhase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3BroadPhase.cpp; sourceTree = "<group>"; };
+		0B8861741C7A698600146EF6 /* q3BroadPhase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3BroadPhase.h; sourceTree = "<group>"; };
+		0B8861751C7A698600146EF6 /* q3DynamicAABBTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3DynamicAABBTree.cpp; sourceTree = "<group>"; };
+		0B8861761C7A698600146EF6 /* q3DynamicAABBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3DynamicAABBTree.h; sourceTree = "<group>"; };
+		0B8861771C7A698600146EF6 /* q3DynamicAABBTree.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3DynamicAABBTree.inl; sourceTree = "<group>"; };
+		0B88619D1C7A698600146EF6 /* q3Box.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Box.cpp; sourceTree = "<group>"; };
+		0B88619E1C7A698600146EF6 /* q3Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Box.h; sourceTree = "<group>"; };
+		0B88619F1C7A698600146EF6 /* q3Box.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Box.inl; sourceTree = "<group>"; };
+		0B8861A01C7A698600146EF6 /* q3Collide.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Collide.cpp; sourceTree = "<group>"; };
+		0B8861A11C7A698600146EF6 /* q3Collide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Collide.h; sourceTree = "<group>"; };
+		0B8861A31C7A698600146EF6 /* q3Geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Geometry.cpp; sourceTree = "<group>"; };
+		0B8861A41C7A698600146EF6 /* q3Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Geometry.h; sourceTree = "<group>"; };
+		0B8861A51C7A698600146EF6 /* q3Geometry.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Geometry.inl; sourceTree = "<group>"; };
+		0B8861A61C7A698600146EF6 /* q3Memory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Memory.cpp; sourceTree = "<group>"; };
+		0B8861A71C7A698600146EF6 /* q3Memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Memory.h; sourceTree = "<group>"; };
+		0B8861A81C7A698600146EF6 /* q3Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Settings.h; sourceTree = "<group>"; };
+		0B8861A91C7A698600146EF6 /* q3Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Types.h; sourceTree = "<group>"; };
+		0B8861AB1C7A698600146EF6 /* q3Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Render.h; sourceTree = "<group>"; };
+		0B8861AD1C7A698600146EF6 /* q3Body.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Body.cpp; sourceTree = "<group>"; };
+		0B8861AE1C7A698600146EF6 /* q3Body.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Body.h; sourceTree = "<group>"; };
+		0B8861AF1C7A698600146EF6 /* q3Contact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Contact.cpp; sourceTree = "<group>"; };
+		0B8861B01C7A698600146EF6 /* q3Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Contact.h; sourceTree = "<group>"; };
+		0B8861B11C7A698600146EF6 /* q3ContactManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3ContactManager.cpp; sourceTree = "<group>"; };
+		0B8861B21C7A698600146EF6 /* q3ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3ContactManager.h; sourceTree = "<group>"; };
+		0B8861B31C7A698600146EF6 /* q3ContactSolver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3ContactSolver.cpp; sourceTree = "<group>"; };
+		0B8861B41C7A698600146EF6 /* q3ContactSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3ContactSolver.h; sourceTree = "<group>"; };
+		0B8861B51C7A698600146EF6 /* q3Island.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Island.cpp; sourceTree = "<group>"; };
+		0B8861B61C7A698600146EF6 /* q3Island.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Island.h; sourceTree = "<group>"; };
+		0B8861B91C7A698600146EF6 /* q3Mat3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Mat3.cpp; sourceTree = "<group>"; };
+		0B8861BA1C7A698600146EF6 /* q3Mat3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Mat3.h; sourceTree = "<group>"; };
+		0B8861BB1C7A698600146EF6 /* q3Mat3.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Mat3.inl; sourceTree = "<group>"; };
+		0B8861BC1C7A698600146EF6 /* q3Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Math.h; sourceTree = "<group>"; };
+		0B8861BD1C7A698600146EF6 /* q3Math.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Math.inl; sourceTree = "<group>"; };
+		0B8861BE1C7A698600146EF6 /* q3Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Quaternion.cpp; sourceTree = "<group>"; };
+		0B8861BF1C7A698600146EF6 /* q3Quaternion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Quaternion.h; sourceTree = "<group>"; };
+		0B8861C01C7A698600146EF6 /* q3Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Transform.h; sourceTree = "<group>"; };
+		0B8861C11C7A698600146EF6 /* q3Transform.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Transform.inl; sourceTree = "<group>"; };
+		0B8861C21C7A698600146EF6 /* q3Vec3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Vec3.cpp; sourceTree = "<group>"; };
+		0B8861C31C7A698600146EF6 /* q3Vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Vec3.h; sourceTree = "<group>"; };
+		0B8861C41C7A698600146EF6 /* q3Vec3.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = q3Vec3.inl; sourceTree = "<group>"; };
+		0B8861C51C7A698600146EF6 /* q3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3.h; sourceTree = "<group>"; };
+		0B8861C71C7A698600146EF6 /* q3Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3Scene.cpp; sourceTree = "<group>"; };
+		0B8861C81C7A698600146EF6 /* q3Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = q3Scene.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B8861671C7A690400146EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8861611C7A690400146EF6 = {
+			isa = PBXGroup;
+			children = (
+				0B8861711C7A698600146EF6 /* src */,
+				0B88616B1C7A690400146EF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B88616B1C7A690400146EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B88616A1C7A690400146EF6 /* libqu3e.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B8861711C7A698600146EF6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861721C7A698600146EF6 /* broadphase */,
+				0B88619C1C7A698600146EF6 /* collision */,
+				0B8861A21C7A698600146EF6 /* common */,
+				0B8861AA1C7A698600146EF6 /* debug */,
+				0B8861AC1C7A698600146EF6 /* dynamics */,
+				0B8861B81C7A698600146EF6 /* math */,
+				0B8861C51C7A698600146EF6 /* q3.h */,
+				0B8861C61C7A698600146EF6 /* scene */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0B8861721C7A698600146EF6 /* broadphase */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861731C7A698600146EF6 /* q3BroadPhase.cpp */,
+				0B8861741C7A698600146EF6 /* q3BroadPhase.h */,
+				0B8861751C7A698600146EF6 /* q3DynamicAABBTree.cpp */,
+				0B8861761C7A698600146EF6 /* q3DynamicAABBTree.h */,
+				0B8861771C7A698600146EF6 /* q3DynamicAABBTree.inl */,
+			);
+			path = broadphase;
+			sourceTree = "<group>";
+		};
+		0B88619C1C7A698600146EF6 /* collision */ = {
+			isa = PBXGroup;
+			children = (
+				0B88619D1C7A698600146EF6 /* q3Box.cpp */,
+				0B88619E1C7A698600146EF6 /* q3Box.h */,
+				0B88619F1C7A698600146EF6 /* q3Box.inl */,
+				0B8861A01C7A698600146EF6 /* q3Collide.cpp */,
+				0B8861A11C7A698600146EF6 /* q3Collide.h */,
+			);
+			path = collision;
+			sourceTree = "<group>";
+		};
+		0B8861A21C7A698600146EF6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861A31C7A698600146EF6 /* q3Geometry.cpp */,
+				0B8861A41C7A698600146EF6 /* q3Geometry.h */,
+				0B8861A51C7A698600146EF6 /* q3Geometry.inl */,
+				0B8861A61C7A698600146EF6 /* q3Memory.cpp */,
+				0B8861A71C7A698600146EF6 /* q3Memory.h */,
+				0B8861A81C7A698600146EF6 /* q3Settings.h */,
+				0B8861A91C7A698600146EF6 /* q3Types.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		0B8861AA1C7A698600146EF6 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861AB1C7A698600146EF6 /* q3Render.h */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		0B8861AC1C7A698600146EF6 /* dynamics */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861AD1C7A698600146EF6 /* q3Body.cpp */,
+				0B8861AE1C7A698600146EF6 /* q3Body.h */,
+				0B8861AF1C7A698600146EF6 /* q3Contact.cpp */,
+				0B8861B01C7A698600146EF6 /* q3Contact.h */,
+				0B8861B11C7A698600146EF6 /* q3ContactManager.cpp */,
+				0B8861B21C7A698600146EF6 /* q3ContactManager.h */,
+				0B8861B31C7A698600146EF6 /* q3ContactSolver.cpp */,
+				0B8861B41C7A698600146EF6 /* q3ContactSolver.h */,
+				0B8861B51C7A698600146EF6 /* q3Island.cpp */,
+				0B8861B61C7A698600146EF6 /* q3Island.h */,
+			);
+			path = dynamics;
+			sourceTree = "<group>";
+		};
+		0B8861B81C7A698600146EF6 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861B91C7A698600146EF6 /* q3Mat3.cpp */,
+				0B8861BA1C7A698600146EF6 /* q3Mat3.h */,
+				0B8861BB1C7A698600146EF6 /* q3Mat3.inl */,
+				0B8861BC1C7A698600146EF6 /* q3Math.h */,
+				0B8861BD1C7A698600146EF6 /* q3Math.inl */,
+				0B8861BE1C7A698600146EF6 /* q3Quaternion.cpp */,
+				0B8861BF1C7A698600146EF6 /* q3Quaternion.h */,
+				0B8861C01C7A698600146EF6 /* q3Transform.h */,
+				0B8861C11C7A698600146EF6 /* q3Transform.inl */,
+				0B8861C21C7A698600146EF6 /* q3Vec3.cpp */,
+				0B8861C31C7A698600146EF6 /* q3Vec3.h */,
+				0B8861C41C7A698600146EF6 /* q3Vec3.inl */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		0B8861C61C7A698600146EF6 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				0B8861C71C7A698600146EF6 /* q3Scene.cpp */,
+				0B8861C81C7A698600146EF6 /* q3Scene.h */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B8861681C7A690400146EF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B8861691C7A690400146EF6 /* qu3e */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B88616E1C7A690400146EF6 /* Build configuration list for PBXNativeTarget "qu3e" */;
+			buildPhases = (
+				0B8861661C7A690400146EF6 /* Sources */,
+				0B8861671C7A690400146EF6 /* Frameworks */,
+				0B8861681C7A690400146EF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qu3e;
+			productName = qu3e;
+			productReference = 0B88616A1C7A690400146EF6 /* libqu3e.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B8861621C7A690400146EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = crust;
+				TargetAttributes = {
+					0B8861691C7A690400146EF6 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 0B8861651C7A690400146EF6 /* Build configuration list for PBXProject "qu3e" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B8861611C7A690400146EF6;
+			productRefGroup = 0B88616B1C7A690400146EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B8861691C7A690400146EF6 /* qu3e */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B8861661C7A690400146EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8861CA1C7A69C700146EF6 /* q3BroadPhase.h in Sources */,
+				0B8861CB1C7A69C700146EF6 /* q3DynamicAABBTree.cpp in Sources */,
+				0B8861CC1C7A69C700146EF6 /* q3DynamicAABBTree.h in Sources */,
+				0B8861CD1C7A69C700146EF6 /* q3DynamicAABBTree.inl in Sources */,
+				0B8861CE1C7A69C700146EF6 /* q3Box.cpp in Sources */,
+				0B8861CF1C7A69C700146EF6 /* q3Box.h in Sources */,
+				0B8861D01C7A69C700146EF6 /* q3Box.inl in Sources */,
+				0B8861D11C7A69C700146EF6 /* q3Collide.cpp in Sources */,
+				0B8861D21C7A69C700146EF6 /* q3Collide.h in Sources */,
+				0B8861D31C7A69C700146EF6 /* q3Geometry.cpp in Sources */,
+				0B8861D41C7A69C700146EF6 /* q3Geometry.h in Sources */,
+				0B8861D51C7A69C700146EF6 /* q3Geometry.inl in Sources */,
+				0B8861D61C7A69C700146EF6 /* q3Memory.cpp in Sources */,
+				0B8861D71C7A69C700146EF6 /* q3Memory.h in Sources */,
+				0B8861D81C7A69C700146EF6 /* q3Settings.h in Sources */,
+				0B8861D91C7A69C700146EF6 /* q3Types.h in Sources */,
+				0B8861DA1C7A69C700146EF6 /* q3Render.h in Sources */,
+				0B8861DB1C7A69C700146EF6 /* q3Body.cpp in Sources */,
+				0B8861DC1C7A69C700146EF6 /* q3Body.h in Sources */,
+				0B8861DD1C7A69C700146EF6 /* q3Contact.cpp in Sources */,
+				0B8861DE1C7A69C700146EF6 /* q3Contact.h in Sources */,
+				0B8861DF1C7A69C700146EF6 /* q3ContactManager.cpp in Sources */,
+				0B8861E01C7A69C700146EF6 /* q3ContactManager.h in Sources */,
+				0B8861E11C7A69C700146EF6 /* q3ContactSolver.cpp in Sources */,
+				0B8861E21C7A69C700146EF6 /* q3ContactSolver.h in Sources */,
+				0B8861E31C7A69C700146EF6 /* q3Island.cpp in Sources */,
+				0B8861E41C7A69C700146EF6 /* q3Island.h in Sources */,
+				0B8861E51C7A69C700146EF6 /* q3Mat3.cpp in Sources */,
+				0B8861E61C7A69C700146EF6 /* q3Mat3.h in Sources */,
+				0B8861E71C7A69C700146EF6 /* q3Mat3.inl in Sources */,
+				0B8861E81C7A69C700146EF6 /* q3Math.h in Sources */,
+				0B8861E91C7A69C700146EF6 /* q3Math.inl in Sources */,
+				0B8861EA1C7A69C700146EF6 /* q3Quaternion.cpp in Sources */,
+				0B8861EB1C7A69C700146EF6 /* q3Quaternion.h in Sources */,
+				0B8861EC1C7A69C700146EF6 /* q3Transform.h in Sources */,
+				0B8861ED1C7A69C700146EF6 /* q3Transform.inl in Sources */,
+				0B8861EE1C7A69C700146EF6 /* q3Vec3.cpp in Sources */,
+				0B8861EF1C7A69C700146EF6 /* q3Vec3.h in Sources */,
+				0B8861F01C7A69C700146EF6 /* q3Vec3.inl in Sources */,
+				0B8861F11C7A69C700146EF6 /* q3.h in Sources */,
+				0B8861F21C7A69C700146EF6 /* q3Scene.cpp in Sources */,
+				0B8861F31C7A69C700146EF6 /* q3Scene.h in Sources */,
+				0B8861C91C7A69BD00146EF6 /* q3BroadPhase.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B88616C1C7A690400146EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		0B88616D1C7A690400146EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		0B88616F1C7A690400146EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B8861701C7A690400146EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B8861651C7A690400146EF6 /* Build configuration list for PBXProject "qu3e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B88616C1C7A690400146EF6 /* Debug */,
+				0B88616D1C7A690400146EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B88616E1C7A690400146EF6 /* Build configuration list for PBXNativeTarget "qu3e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B88616F1C7A690400146EF6 /* Debug */,
+				0B8861701C7A690400146EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B8861621C7A690400146EF6 /* Project object */;
+}
