@@ -342,6 +342,9 @@ void q3Scene::QueryAABB( q3QueryCallback *cb, const q3AABB& aabb ) const
 {
 	struct SceneQueryWrapper
 	{
+    SceneQueryWrapper( const q3AABB& aabb )
+      : m_aabb(aabb)
+      {}
 		bool TreeCallBack( i32 id )
 		{
 			q3AABB aabb;
@@ -359,11 +362,10 @@ void q3Scene::QueryAABB( q3QueryCallback *cb, const q3AABB& aabb ) const
 
 		q3QueryCallback *cb;
 		const q3BroadPhase *broadPhase;
-		q3AABB m_aabb;
+		const q3AABB& m_aabb;
 	};
 
-	SceneQueryWrapper wrapper;
-	wrapper.m_aabb = aabb;
+	SceneQueryWrapper wrapper (aabb);
 	wrapper.broadPhase = &m_contactManager.m_broadphase;
 	wrapper.cb = cb;
 	m_contactManager.m_broadphase.m_tree.Query( &wrapper, aabb );

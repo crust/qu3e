@@ -461,7 +461,7 @@ void q3DynamicAABBTree::InsertLeaf( i32 id )
 		m_nodes[ id ].parent = newParent;
 	}
 
-	SyncHeirarchy( m_nodes[ id ].parent );
+  SyncHeirarchy( m_nodes[ id ].parent );
 }
 
 void q3DynamicAABBTree::RemoveLeaf( i32 id )
