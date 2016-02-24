@@ -407,7 +407,6 @@ void* q3Body::GetUserdata( ) const {
 //--------------------------------------------------------------------------------------------------
 void q3Body::Render( q3Render* render ) const
 {
-	q3Transform tx = m_tx;
 	bool awake = IsAwake( );
 	q3Box* box = m_boxes;
 

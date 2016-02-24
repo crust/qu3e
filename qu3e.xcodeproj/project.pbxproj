@@ -8,48 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0B8861C91C7A69BD00146EF6 /* q3BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861731C7A698600146EF6 /* q3BroadPhase.cpp */; };
-		0B8861CA1C7A69C700146EF6 /* q3BroadPhase.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861741C7A698600146EF6 /* q3BroadPhase.h */; };
 		0B8861CB1C7A69C700146EF6 /* q3DynamicAABBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861751C7A698600146EF6 /* q3DynamicAABBTree.cpp */; };
-		0B8861CC1C7A69C700146EF6 /* q3DynamicAABBTree.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861761C7A698600146EF6 /* q3DynamicAABBTree.h */; };
-		0B8861CD1C7A69C700146EF6 /* q3DynamicAABBTree.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861771C7A698600146EF6 /* q3DynamicAABBTree.inl */; };
 		0B8861CE1C7A69C700146EF6 /* q3Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619D1C7A698600146EF6 /* q3Box.cpp */; };
-		0B8861CF1C7A69C700146EF6 /* q3Box.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619E1C7A698600146EF6 /* q3Box.h */; };
-		0B8861D01C7A69C700146EF6 /* q3Box.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B88619F1C7A698600146EF6 /* q3Box.inl */; };
 		0B8861D11C7A69C700146EF6 /* q3Collide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A01C7A698600146EF6 /* q3Collide.cpp */; };
-		0B8861D21C7A69C700146EF6 /* q3Collide.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A11C7A698600146EF6 /* q3Collide.h */; };
 		0B8861D31C7A69C700146EF6 /* q3Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A31C7A698600146EF6 /* q3Geometry.cpp */; };
-		0B8861D41C7A69C700146EF6 /* q3Geometry.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A41C7A698600146EF6 /* q3Geometry.h */; };
-		0B8861D51C7A69C700146EF6 /* q3Geometry.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A51C7A698600146EF6 /* q3Geometry.inl */; };
 		0B8861D61C7A69C700146EF6 /* q3Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A61C7A698600146EF6 /* q3Memory.cpp */; };
-		0B8861D71C7A69C700146EF6 /* q3Memory.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A71C7A698600146EF6 /* q3Memory.h */; };
-		0B8861D81C7A69C700146EF6 /* q3Settings.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A81C7A698600146EF6 /* q3Settings.h */; };
-		0B8861D91C7A69C700146EF6 /* q3Types.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861A91C7A698600146EF6 /* q3Types.h */; };
-		0B8861DA1C7A69C700146EF6 /* q3Render.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AB1C7A698600146EF6 /* q3Render.h */; };
 		0B8861DB1C7A69C700146EF6 /* q3Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AD1C7A698600146EF6 /* q3Body.cpp */; };
-		0B8861DC1C7A69C700146EF6 /* q3Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AE1C7A698600146EF6 /* q3Body.h */; };
 		0B8861DD1C7A69C700146EF6 /* q3Contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861AF1C7A698600146EF6 /* q3Contact.cpp */; };
-		0B8861DE1C7A69C700146EF6 /* q3Contact.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B01C7A698600146EF6 /* q3Contact.h */; };
 		0B8861DF1C7A69C700146EF6 /* q3ContactManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B11C7A698600146EF6 /* q3ContactManager.cpp */; };
-		0B8861E01C7A69C700146EF6 /* q3ContactManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B21C7A698600146EF6 /* q3ContactManager.h */; };
 		0B8861E11C7A69C700146EF6 /* q3ContactSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B31C7A698600146EF6 /* q3ContactSolver.cpp */; };
-		0B8861E21C7A69C700146EF6 /* q3ContactSolver.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B41C7A698600146EF6 /* q3ContactSolver.h */; };
 		0B8861E31C7A69C700146EF6 /* q3Island.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B51C7A698600146EF6 /* q3Island.cpp */; };
-		0B8861E41C7A69C700146EF6 /* q3Island.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B61C7A698600146EF6 /* q3Island.h */; };
 		0B8861E51C7A69C700146EF6 /* q3Mat3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861B91C7A698600146EF6 /* q3Mat3.cpp */; };
-		0B8861E61C7A69C700146EF6 /* q3Mat3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BA1C7A698600146EF6 /* q3Mat3.h */; };
-		0B8861E71C7A69C700146EF6 /* q3Mat3.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BB1C7A698600146EF6 /* q3Mat3.inl */; };
-		0B8861E81C7A69C700146EF6 /* q3Math.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BC1C7A698600146EF6 /* q3Math.h */; };
-		0B8861E91C7A69C700146EF6 /* q3Math.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BD1C7A698600146EF6 /* q3Math.inl */; };
 		0B8861EA1C7A69C700146EF6 /* q3Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BE1C7A698600146EF6 /* q3Quaternion.cpp */; };
-		0B8861EB1C7A69C700146EF6 /* q3Quaternion.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861BF1C7A698600146EF6 /* q3Quaternion.h */; };
-		0B8861EC1C7A69C700146EF6 /* q3Transform.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C01C7A698600146EF6 /* q3Transform.h */; };
-		0B8861ED1C7A69C700146EF6 /* q3Transform.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C11C7A698600146EF6 /* q3Transform.inl */; };
 		0B8861EE1C7A69C700146EF6 /* q3Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C21C7A698600146EF6 /* q3Vec3.cpp */; };
-		0B8861EF1C7A69C700146EF6 /* q3Vec3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C31C7A698600146EF6 /* q3Vec3.h */; };
-		0B8861F01C7A69C700146EF6 /* q3Vec3.inl in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C41C7A698600146EF6 /* q3Vec3.inl */; };
-		0B8861F11C7A69C700146EF6 /* q3.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C51C7A698600146EF6 /* q3.h */; };
 		0B8861F21C7A69C700146EF6 /* q3Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C71C7A698600146EF6 /* q3Scene.cpp */; };
-		0B8861F31C7A69C700146EF6 /* q3Scene.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B8861C81C7A698600146EF6 /* q3Scene.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -298,48 +270,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B8861CA1C7A69C700146EF6 /* q3BroadPhase.h in Sources */,
 				0B8861CB1C7A69C700146EF6 /* q3DynamicAABBTree.cpp in Sources */,
-				0B8861CC1C7A69C700146EF6 /* q3DynamicAABBTree.h in Sources */,
-				0B8861CD1C7A69C700146EF6 /* q3DynamicAABBTree.inl in Sources */,
 				0B8861CE1C7A69C700146EF6 /* q3Box.cpp in Sources */,
-				0B8861CF1C7A69C700146EF6 /* q3Box.h in Sources */,
-				0B8861D01C7A69C700146EF6 /* q3Box.inl in Sources */,
 				0B8861D11C7A69C700146EF6 /* q3Collide.cpp in Sources */,
-				0B8861D21C7A69C700146EF6 /* q3Collide.h in Sources */,
 				0B8861D31C7A69C700146EF6 /* q3Geometry.cpp in Sources */,
-				0B8861D41C7A69C700146EF6 /* q3Geometry.h in Sources */,
-				0B8861D51C7A69C700146EF6 /* q3Geometry.inl in Sources */,
 				0B8861D61C7A69C700146EF6 /* q3Memory.cpp in Sources */,
-				0B8861D71C7A69C700146EF6 /* q3Memory.h in Sources */,
-				0B8861D81C7A69C700146EF6 /* q3Settings.h in Sources */,
-				0B8861D91C7A69C700146EF6 /* q3Types.h in Sources */,
-				0B8861DA1C7A69C700146EF6 /* q3Render.h in Sources */,
 				0B8861DB1C7A69C700146EF6 /* q3Body.cpp in Sources */,
-				0B8861DC1C7A69C700146EF6 /* q3Body.h in Sources */,
 				0B8861DD1C7A69C700146EF6 /* q3Contact.cpp in Sources */,
-				0B8861DE1C7A69C700146EF6 /* q3Contact.h in Sources */,
 				0B8861DF1C7A69C700146EF6 /* q3ContactManager.cpp in Sources */,
-				0B8861E01C7A69C700146EF6 /* q3ContactManager.h in Sources */,
 				0B8861E11C7A69C700146EF6 /* q3ContactSolver.cpp in Sources */,
-				0B8861E21C7A69C700146EF6 /* q3ContactSolver.h in Sources */,
 				0B8861E31C7A69C700146EF6 /* q3Island.cpp in Sources */,
-				0B8861E41C7A69C700146EF6 /* q3Island.h in Sources */,
 				0B8861E51C7A69C700146EF6 /* q3Mat3.cpp in Sources */,
-				0B8861E61C7A69C700146EF6 /* q3Mat3.h in Sources */,
-				0B8861E71C7A69C700146EF6 /* q3Mat3.inl in Sources */,
-				0B8861E81C7A69C700146EF6 /* q3Math.h in Sources */,
-				0B8861E91C7A69C700146EF6 /* q3Math.inl in Sources */,
 				0B8861EA1C7A69C700146EF6 /* q3Quaternion.cpp in Sources */,
-				0B8861EB1C7A69C700146EF6 /* q3Quaternion.h in Sources */,
-				0B8861EC1C7A69C700146EF6 /* q3Transform.h in Sources */,
-				0B8861ED1C7A69C700146EF6 /* q3Transform.inl in Sources */,
 				0B8861EE1C7A69C700146EF6 /* q3Vec3.cpp in Sources */,
-				0B8861EF1C7A69C700146EF6 /* q3Vec3.h in Sources */,
-				0B8861F01C7A69C700146EF6 /* q3Vec3.inl in Sources */,
-				0B8861F11C7A69C700146EF6 /* q3.h in Sources */,
 				0B8861F21C7A69C700146EF6 /* q3Scene.cpp in Sources */,
-				0B8861F31C7A69C700146EF6 /* q3Scene.h in Sources */,
 				0B8861C91C7A69BD00146EF6 /* q3BroadPhase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
