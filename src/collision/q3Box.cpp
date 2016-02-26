@@ -99,6 +99,7 @@ bool q3Box::Raycast( const q3Transform& tx, q3RaycastData* raycast ) const
 			{
 				return false;
 			}
+
 		}
 	}
 

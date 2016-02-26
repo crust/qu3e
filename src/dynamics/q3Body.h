@@ -89,6 +89,7 @@ public:
 	i32 GetFlags( ) const;
 	void SetLayers( i32 layers );
 	i32 GetLayers( ) const;
+  u32 GetCollisionGroupMask( ) const;
 	const q3Quaternion& GetQuaternion( ) const;
   
   void SetUserdata( void* );

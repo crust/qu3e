@@ -123,12 +123,10 @@ void q3Body::RemoveBox( const q3Box* box )
 	assert( box->body == this );
 
 	q3Box* node = m_boxes;
-	q3Box* list = m_boxes;
 
 	bool found = false;
 	if ( node == box )
 	{
-		list = node->next;
 		found = true;
 	}
 
@@ -386,6 +384,12 @@ void q3Body::SetLayers( i32 layers )
 i32 q3Body::GetLayers( ) const
 {
 	return m_layers;
+}
+
+//--------------------------------------------------------------------------------------------------
+u32 q3Body::GetCollisionGroupMask( ) const
+{
+	return m_collisionGroupMask;
 }
 
 //--------------------------------------------------------------------------------------------------
