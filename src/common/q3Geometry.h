@@ -70,6 +70,7 @@ struct q3RaycastData
 	q3Vec3 start;	// Beginning point of the ray
 	q3Vec3 dir;		// Direction of the ray (normalized)
 	r32 t;			// Time specifying ray endpoint
+  u32 collisionGroupMask { 0 }; // do not report bodies matching this mask
 
 	r32 toi;		// Solved time of impact
 	q3Vec3 normal;	// Surface normal at impact

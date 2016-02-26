@@ -414,6 +414,11 @@ void q3Scene::RayCast( q3QueryCallback *cb, q3RaycastData& rayCast ) const
 		{
 			q3Box *box = (q3Box *)broadPhase->m_tree.GetUserData( id );
 
+      if ( box->body->GetCollisionGroupMask() & m_rayCast->collisionGroupMask )
+      {
+        return true;
+      }
+
 			if ( box->Raycast( box->body->GetTransform( ), m_rayCast ) )
 			{
 				return cb->ReportShape( box );
