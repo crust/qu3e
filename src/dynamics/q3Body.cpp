@@ -399,11 +399,11 @@ const q3Quaternion& q3Body::GetQuaternion( ) const
 }
 
 //--------------------------------------------------------------------------------------------------
-void q3Body::SetUserdata( void* data ) {
+void q3Body::SetUserData( void* data ) {
   m_userData = data;
 }
 
-void* q3Body::GetUserdata( ) const {
+void* q3Body::GetUserData( ) const {
   return m_userData;
 }
 

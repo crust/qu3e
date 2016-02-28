@@ -92,8 +92,8 @@ public:
   u32 GetCollisionGroupMask( ) const;
 	const q3Quaternion& GetQuaternion( ) const;
   
-  void SetUserdata( void* );
-  void* GetUserdata( ) const;
+  void SetUserData( void* );
+  void* GetUserData( ) const;
 
 	// Manipulating the transformation of a body manually will result in
 	// non-physical behavior. Contacts are updated upon the next call to
