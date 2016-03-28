@@ -25,6 +25,7 @@
 //--------------------------------------------------------------------------------------------------
 
 #include "q3Box.h"
+#include "q3Body.h"
 #include "../math/q3Vec3.h"
 
 //--------------------------------------------------------------------------------------------------
@@ -214,4 +215,13 @@ void q3Box::Render( const q3Transform& tx, bool awake, q3Render* render ) const
 		render->SetTriNormal( n.x, n.y, n.z );
 		render->Triangle( a.x, a.y, a.z, b.x, b.y, b.z, c.x, c.y, c.z );
 	}
+}
+
+//--------------------------------------------------------------------------------------------------
+bool q3Box::CanCollide ( const q3Box* other ) const {
+
+  // Per-box collision group mask may override that of the parent.
+  // If none of the bits are shared, the collision is possible.
+  return !(collisionGroupMask & other->collisionGroupMask)
+    && body->CanCollide(other->body);
 }

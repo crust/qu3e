@@ -56,6 +56,7 @@ struct q3Box
 	r32 restitution;
 	r32 density;
 	i32 broadPhaseIndex;
+  u32 collisionGroupMask;
 	mutable void* userData;
 	mutable bool sensor;
 
@@ -68,6 +69,9 @@ struct q3Box
 	void ComputeAABB( const q3Transform& tx, q3AABB* aabb ) const;
 	void ComputeMass( q3MassData* md ) const;
 	void Render( const q3Transform& tx, bool awake, q3Render* render ) const;
+
+  bool CanCollide ( const q3Box* other ) const;
+
 };
 
 //--------------------------------------------------------------------------------------------------
@@ -83,6 +87,7 @@ public:
 		m_restitution = r32( 0.2 );
 		m_density = r32( 1.0 );
 		m_sensor = false;
+    m_collisionGroupMask = 0;
 	}
 
 	void Set( const q3Transform& tx, const q3Vec3& extents );
@@ -91,6 +96,7 @@ public:
 	void SetRestitution( r32 restitution );
 	void SetDensity( r32 density );
 	void SetSensor( bool sensor );
+  void SetCollisionGroupMask( u32 mask );
 
 private:
 	q3Transform m_tx;
@@ -100,6 +106,7 @@ private:
 	r32 m_restitution;
 	r32 m_density;
 	bool m_sensor;
+  u32 m_collisionGroupMask;
 
 	friend class q3Body;
 };

@@ -49,6 +49,12 @@ inline void q3BoxDef::SetRestitution( r32 restitution )
 }
 
 //--------------------------------------------------------------------------------------------------
+inline void q3BoxDef::SetCollisionGroupMask( u32 mask )
+{
+  m_collisionGroupMask = mask;
+}
+
+//--------------------------------------------------------------------------------------------------
 inline void q3BoxDef::SetFriction( r32 friction )
 {
 	m_friction = friction;

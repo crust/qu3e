@@ -49,7 +49,7 @@ void q3ContactManager::AddContact( q3Box *A, q3Box *B )
 {
 	q3Body *bodyA = A->body;
 	q3Body *bodyB = B->body;
-	if ( !bodyA->CanCollide( bodyB ) )
+	if ( !A->CanCollide( B ) || !B->CanCollide( A ) )
 		return;
 
 	// Search for existing matching contact
@@ -205,7 +205,7 @@ void q3ContactManager::TestCollisions( void )
 		q3Body *bodyA = A->body;
 		q3Body *bodyB = B->body;
 
-		if ( !bodyA->CanCollide( bodyB ) )
+		if ( !A->CanCollide( B ) || !B->CanCollide( A ) )
 		{
 			q3ContactConstraint* next = constraint->next;
 			RemoveContact( constraint );

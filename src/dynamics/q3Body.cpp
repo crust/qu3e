@@ -107,6 +107,8 @@ const q3Box* q3Body::AddBox( const q3BoxDef& def )
 	box->restitution = def.m_restitution;
 	box->density = def.m_density;
 	box->sensor = def.m_sensor;
+  box->collisionGroupMask = def.m_collisionGroupMask ? // overrides parent mask
+    def.m_collisionGroupMask : m_collisionGroupMask;
 
 	CalculateMassData( );
 
@@ -337,9 +339,6 @@ bool q3Body::CanCollide( const q3Body *other ) const
 
 	if ( !(m_layers & other->m_layers) )
 		return false;
-  
-  if ( (m_collisionGroupMask & other->m_collisionGroupMask) )
-    return false;
 
 	return true;
 }
