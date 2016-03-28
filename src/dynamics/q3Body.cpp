@@ -109,6 +109,8 @@ const q3Box* q3Body::AddBox( const q3BoxDef& def )
 	box->sensor = def.m_sensor;
   box->collisionGroupMask = def.m_collisionGroupMask ? // overrides parent mask
     def.m_collisionGroupMask : m_collisionGroupMask;
+  
+  box->userData = def.m_userData;
 
 	CalculateMassData( );
 

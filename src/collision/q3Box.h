@@ -60,8 +60,8 @@ struct q3Box
 	mutable void* userData;
 	mutable bool sensor;
 
-	void SetUserdata( void* data ) const;
-	void* GetUserdata( ) const;
+	void SetUserData( void* data ) const;
+	void* GetUserData( ) const;
 	void SetSensor( bool isSensor );
 
 	bool TestPoint( const q3Transform& tx, const q3Vec3& p ) const;
@@ -80,15 +80,14 @@ struct q3Box
 class q3BoxDef
 {
 public:
-	q3BoxDef( )
-	{
-		// Common default values
-		m_friction = r32( 0.4 );
-		m_restitution = r32( 0.2 );
-		m_density = r32( 1.0 );
-		m_sensor = false;
-    m_collisionGroupMask = 0;
-	}
+	q3BoxDef( ) // Common default values
+    : m_friction( 0.4f )
+    , m_restitution( 0.2f )
+    , m_density( 1.f )
+    , m_sensor( false )
+    , m_collisionGroupMask( 0 )
+    , m_userData( NULL )
+    {}
 
 	void Set( const q3Transform& tx, const q3Vec3& extents );
 
@@ -97,6 +96,7 @@ public:
 	void SetDensity( r32 density );
 	void SetSensor( bool sensor );
   void SetCollisionGroupMask( u32 mask );
+  void SetUserData( void* userData );
 
 private:
 	q3Transform m_tx;
@@ -107,6 +107,7 @@ private:
 	r32 m_density;
 	bool m_sensor;
   u32 m_collisionGroupMask;
+  void* m_userData;
 
 	friend class q3Body;
 };

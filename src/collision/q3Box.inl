@@ -22,13 +22,13 @@
 //--------------------------------------------------------------------------------------------------
 // q3Box
 //--------------------------------------------------------------------------------------------------
-inline void q3Box::SetUserdata( void* data ) const
+inline void q3Box::SetUserData( void* data ) const
 {
 	userData = data;
 }
 
 //--------------------------------------------------------------------------------------------------
-inline void* q3Box::GetUserdata( ) const
+inline void* q3Box::GetUserData( ) const
 {
 	return userData;
 }
@@ -52,6 +52,12 @@ inline void q3BoxDef::SetRestitution( r32 restitution )
 inline void q3BoxDef::SetCollisionGroupMask( u32 mask )
 {
   m_collisionGroupMask = mask;
+}
+
+//--------------------------------------------------------------------------------------------------
+inline void q3BoxDef::SetUserData( void* userData )
+{
+  m_userData = userData;
 }
 
 //--------------------------------------------------------------------------------------------------
